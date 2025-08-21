@@ -1,0 +1,32 @@
+#!/bin/bash
+#SBATCH --time=168:00:00             # limit of wall clock time - how long the job will run (same as -t)
+#SBATCH --mem=16G                # memory required per node - amount of memory (in bytes)
+#SBATCH --job-name virtual_screen      # you can give your job a name for easier identification (same as -J)
+#SBATCH --gres=gpu:2
+#SBATCH --cpus-per-task=6        # optional: better to specify for Python multiprocessing
+#SBATCH --output=slurm-%x-%j.out # optional: log file
+
+module purge
+source /path_to_conda/conda.sh
+conda activate opharm_env
+export PATH="/path_to/miniconda3/envs/opharm_env/bin:$PATH"
+
+echo "=== Debug info ==="
+echo "which python: $(which python)"
+python --version
+echo "PYTHONPATH: $PYTHONPATH"
+echo "PATH: $PATH"
+pip show openpharmacophore
+export PATH="$CONDA3PATH/envs/opharm_env/bin:$PATH"
+
+echo "[INFO] Running screen.py"
+python screen.py
+
+echo "[INFO] Running screen2.py"
+python screen2.py
+
+echo "[INFO] Running screen3.py"
+python screen3.py
+
+#wait
+
