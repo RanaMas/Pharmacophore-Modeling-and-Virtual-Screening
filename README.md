@@ -4,7 +4,7 @@ Huge drug 3D databases can be hard to store/screen on a local machine. In this r
 
 This is a pipeline that helps change the formatting pf a pharmacophore file from .ph4 to json and screen drug libraries like **ZINC**_lead_like and **CHEMBL**_2.5million databases.
 
-File.ph4 is the pharamcophore file used by the Molecular Operating Environment software (MOE) while File.json is the format used by most softwares/modules like **OpenPharmacophore**.
+File.ph4 is the pharamcophore format used by the Molecular Operating Environment software (MOE) while File.json is the format used by most softwares/modules like **OpenPharmacophore**.
 
 In this repo, a code that changes the format from .ph4 to json is provided; in addition to a Python code for screening the libraries.
 
