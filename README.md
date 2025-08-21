@@ -17,7 +17,7 @@ If you only have acces to a 2D library, 3D structures can be generated using the
 
 **Post Pharmacophore Search**
 
-In th effort of prioritizing your hits after the pharamacophore search, a code (stoplight.py) is provided that prioritizes the pharmacophore hits based on MW, logP, HBD, HBA, Rotatable bonds and TPSA according to Lipinski's Druglike Score (parameters are adjustable).
+In th effort of prioritizing your hits after the pharmacophore search, a code (stoplight.py) is provided that prioritizes the pharmacophore hits based on MW, logP, HBD, HBA, Rotatable bonds and TPSA according to Lipinski's Druglike Score (parameters are adjustable).
 
 The stoplight analysis categorizes the molecules as Green/Yellow/Red. Each parameter is flagged and given a score of 2 (green), 1 (yellow) or 0 (red). Upon scanning, each feature in the molecule is indexed and the total score goes from 0 to 12 (6 features).
 
