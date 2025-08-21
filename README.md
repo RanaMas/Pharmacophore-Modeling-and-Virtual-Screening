@@ -15,5 +15,7 @@ In addition, a script in bash is provided that allows you screen 3D libraries us
 If you only have acces to a 2D library, 3D structures can be generated using the **Wash** algorithm in MOE.
 
 
-**Post Pharmacophore Search** In th effort of prioritizing your hits after the pharamacophore search, a code (stoplight.py) is provided that prioritizes the pharmacophore hits based on MW, logP, HBD, HBA, Rotatable bonds and TPSA according to Lipinski's Druglike Score (parameters are adjustable). The stoplight analysis categorizes the molecules as Green/Yellow/Red. Each parameter is flagged and given a score of 2 (green), 1 (yellow) or 0 (red). Upon scanning, each feature in the molecule is indexed and the total score goes from 0 to 12 (6 features).
+**Post Pharmacophore Search**
+
+In th effort of prioritizing your hits after the pharamacophore search, a code (stoplight.py) is provided that prioritizes the pharmacophore hits based on MW, logP, HBD, HBA, Rotatable bonds and TPSA according to Lipinski's Druglike Score (parameters are adjustable). The stoplight analysis categorizes the molecules as Green/Yellow/Red. Each parameter is flagged and given a score of 2 (green), 1 (yellow) or 0 (red). Upon scanning, each feature in the molecule is indexed and the total score goes from 0 to 12 (6 features).
 **N.B.** Molecules of highest priority score 12 if all 6 features were considered.
