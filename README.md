@@ -10,4 +10,6 @@ In this repo, a code that changes the format from .ph4 to json is provided; in a
 
 In addition, a script in bash is provided that allows you screen 3D libraries using several pharmacophores at once once submmitted as: **sbatch sreen.job**
 
-**This repo assumes that you have already installed and compiled openpharm_env where OpenPharmacophore is functional**
+**This repo assumes that you have already installed and compiled openpharm_env where OpenPharmacophore is functional** and that you have downloaded the 3d libraries from ZINC20/22 or CHEMBL.
+
+If you only have acces to a 2D library, 3D structures can be generated using the **Wash** algorithm in MOE.
