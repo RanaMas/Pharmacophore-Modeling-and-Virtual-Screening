@@ -8,7 +8,7 @@ File.ph4 is the pharamcophore format used by the Molecular Operating Environment
 
 In this repo, a code that changes the format from .ph4 to json is provided; in addition to a Python code for screening the libraries.
 
-In addition, a script in bash is provided that allows you screen 3D libraries using several pharmacophores at once once submmitted as: **sbatch sreen.job**
+In addition, a script in bash is provided that allows you to screen 3D libraries using several pharmacophores at once once submmitted as: **sbatch sreen.job**
 
 **This repo assumes that you have already installed and compiled opharm_env where OpenPharmacophore is functional** and that you have downloaded the 3d libraries from ZINC20/22 or CHEMBL.
 
